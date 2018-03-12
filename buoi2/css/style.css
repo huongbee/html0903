@@ -4,5 +4,13 @@
     height: 200px;
     float: left;
     margin: 20px 40px;
-    padding: 20px
+    /* padding: 20px; */
+    border: 1px #000 solid;
+    border-radius: 50%;
+    /* line-height: 200px; */
+    text-align: center
+}
+p{
+    line-height: 200px;
+    margin: 0px;
 }
