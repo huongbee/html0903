@@ -2,5 +2,7 @@
     background-color: #94db48;
     width: 200px;
     height: 200px;
-    
+    float: left;
+    margin: 20px 40px;
+    padding: 20px
 }
