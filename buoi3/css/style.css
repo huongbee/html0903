@@ -14,10 +14,10 @@ body{
 .item{
     float: left;
     background-color: #fff;
-    /* width: 31.3333333%;
-    margin: 1% */
-    width: 390px;
-    margin: 5px
+    width: 31.3333333%;
+    margin: 1%;
+    /* width: 380px;
+    margin: 10px */
 }
 .image img{
     height: 180px;
@@ -32,4 +32,18 @@ body{
 }
 .info{
     width:60%
+}
+.promotion{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red
+}
+.footer{
+    margin: 15px
+}
+.name, .price{
+    font-size: 20px;
+    font-weight: bold
+}
+.price{
+    color: red;
 }
