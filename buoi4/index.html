@@ -52,16 +52,34 @@
         </div>
     </nav>
     <div class="container">
-        <br> Text:
-        <input type="text" placeholder="Enter your name">
-        <br> Number
-        <input type="number" placeholder="Enter your age">
-        <br> Email
-        <input type="email" placeholder="Enter your email">
-        <br> Password
-        <input type="password" placeholder="Enter your pass">
-        <br> Date
-        <input type="date" placeholder="Enter your birthdate">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-6">
+                <br> Text:
+                <input type="text" placeholder="Enter your name" class="form-control">
+            </div>
+            <div class="col-md-6 col-sm-6 col-6">
+                <br> Number
+                <input type="number" placeholder="Enter your age" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <br> Email
+                <input type="email" placeholder="Enter your email" class="form-control">
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <br> Email
+                <input type="email" placeholder="Enter your email" class="form-control">
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <br> Email
+                <input type="email" placeholder="Enter your email" class="form-control">
+            </div>
+            <br> Password
+            <input type="password" placeholder="Enter your pass" class="form-control">
+            <br> Date
+            <input type="date" placeholder="Enter your birthdate">
+        </div>
         <br> Range
         <input type="range">
         <br> Color
@@ -89,13 +107,13 @@
             <option>Css</option>
         </select>
         <br> Texarea
-        <textarea rows="9">
+        <textarea rows="9" class="form-control">
 
         </textarea>
         <br>Button submit
-        <button>Add</button>
+        <button class="btn btn-success">Add</button>
         <br> Button reset
-        <button type='reset'>Clear</button>
+        <button type='reset' class="btn btn-primary">Clear</button>
         <br> Button
         <button type='button'>button</button>
 
