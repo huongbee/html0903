@@ -14,15 +14,75 @@
     }
 
     img {
-        height: 100px;
+        width: 100%;
+    }
+
+    .item {
+        border: 1px solid #ccc
+    }
+
+    .hinh {
+        width: 35%;
+
+        border-right: 1px solid #ccc
+    }
+
+    .infor {
+        width: 65%;
+    }
+
+    .hinh,
+    .infor {
+        float: left;
+    }
+
+    .name-price {
+        width: 100%;
+        clear: both;
+    }
+
+    .item:nth-child(2),
+    .item:nth-child(5) {
+        border-left: none;
+        border-right: none
+    }
+
+    .item:nth-child(4),
+    .item:nth-child(5),
+    .item:nth-child(6) {
+        border-top: none;
+
+    }
+
+    .my-style .item {
+        border: none;
+        margin-top: 30px
+    }
+
+    .child-item {
+        padding: 10px;
+        background-color: #fff
     }
 </style>
 
 <body>
 
     <div class="container">
+
+        <div class="row" style="height:100px">
+            <div class="col align-self-end">
+                One of three columns
+            </div>
+            <div class="col align-self-center">
+                One of three columns
+            </div>
+            <div class="col align-self-start">
+                One of three columns
+            </div>
+        </div>
+        <hr>
         <div class="row">
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 item">
                 <div class="hinh">
                     <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
                 </div>
@@ -34,7 +94,7 @@
                     <div class="price">4.000.000</div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 item ">
                 <div class="hinh">
                     <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
                 </div>
@@ -46,7 +106,7 @@
                     <div class="price">4.000.000</div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 item ">
                 <div class="hinh">
                     <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
                 </div>
@@ -58,7 +118,7 @@
                     <div class="price">4.000.000</div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 item ">
                 <div class="hinh">
                     <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
                 </div>
@@ -70,7 +130,7 @@
                     <div class="price">4.000.000</div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 item ">
                 <div class="hinh">
                     <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
                 </div>
@@ -82,7 +142,7 @@
                     <div class="price">4.000.000</div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 item ">
                 <div class="hinh">
                     <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
                 </div>
@@ -95,6 +155,95 @@
                 </div>
             </div>
         </div>
+
+        <hr>
+        <div class="row my-style">
+            <div class="col-sm-4 col-md-6 col-lg-4 item">
+                <div class="child-item">
+                    <div class="hinh">
+                        <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
+                    </div>
+                    <div class="infor">
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                    <div class="name-price">
+                        <div class="name">OPPO</div>
+                        <div class="price">4.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-6 col-lg-4 item">
+                <div class="child-item">
+                    <div class="hinh">
+                        <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
+                    </div>
+                    <div class="infor">
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                    <div class="name-price">
+                        <div class="name">OPPO</div>
+                        <div class="price">4.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 item">
+                <div class="child-item">
+                    <div class="hinh">
+                        <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
+                    </div>
+                    <div class="infor">
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                    <div class="name-price">
+                        <div class="name">OPPO</div>
+                        <div class="price">4.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 item">
+                <div class="child-item">
+                    <div class="hinh">
+                        <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
+                    </div>
+                    <div class="infor">
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                    <div class="name-price">
+                        <div class="name">OPPO</div>
+                        <div class="price">4.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 item">
+                <div class="child-item">
+                    <div class="hinh">
+                        <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
+                    </div>
+                    <div class="infor">
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                    <div class="name-price">
+                        <div class="name">OPPO</div>
+                        <div class="price">4.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 item">
+                <div class="child-item">
+                    <div class="hinh">
+                        <img src="../images/oppo-f5-red-ah-400x460.png" alt="">
+                    </div>
+                    <div class="infor">
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                    <div class="name-price">
+                        <div class="name">OPPO</div>
+                        <div class="price">4.000.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </body>
