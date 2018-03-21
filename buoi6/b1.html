@@ -22,12 +22,13 @@
     </div> -->
 
 
-    <img src="images/pic_bulbon.gif">
+    <img src="images/pic_bulbon.gif" id="light">
 
 
-    <button onclick="myFunction()">Turn off</button>
+    <button id="myBtn" onclick="myFunction()">Turn Off</button>
 
     <script>
+        flag = true
         function myFunction() {
             //var box = document.getElementById('box')
             // box.style.width = box.style.height = "400px";
@@ -35,8 +36,23 @@
 
             //var text = box.title
             //console.log(text)
+
+            var light = document.getElementById('light')
+            var btn = document.getElementById('myBtn')
+
+            if (flag) {
+                light.src = 'images/pic_bulboff.gif'
+                btn.innerHTML = 'Turn On'
+            }
+            else {
+                light.src = 'images/pic_bulbon.gif'
+                btn.innerHTML = 'Turn Off'
+            }
+            flag = !flag
         }
     </script>
+
+
 
 </body>
 
