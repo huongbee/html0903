@@ -10,15 +10,27 @@
 
 <body>
 
-    <input type="text" id="txtSoa">
+    <input type="text" id="txtSoa"> +
     <input type="text" id="txtSob">
+    <input type="text" disabled id="ketqua" placeholder="Ket qua">
     <button onclick="calculate()">Calculate</button>
 </body>
 
 <script>
     function calculate() {
-        var a = document.getElementById('txtSoa').value
-        console.log(a)
+        var a = document.getElementById('txtSoa')
+        var b = document.getElementById('txtSob')
+        var kq = document.getElementById('ketqua')
+
+        var soA = parseInt(a.value)
+        if (isNaN(soA)) {
+            kq.value = "Error!"
+            alert('VUi long nhap so')
+            a.focus()
+            return;
+        }
+
+        kq.value = parseInt(a.value) + parseInt(b.value)
     }
 </script>
 
