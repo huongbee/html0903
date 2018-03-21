@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 id="change-text" style="color:red">
+        Hello
+    </h1>
+    <button onclick="myFunction()">Click Me</button>
+
+
+    <script>
+        // var w = 'Welcome';
+        // document.write(w);
+
+        //document.getElementById('change-text').innerHTML = '<i>Welcome</i>'
+        //document.getElementById('change-text').innerText = 'Welcome'
+
+        var flag = true;
+        function myFunction() {
+
+            var text = document.getElementById("change-text"); //obj
+            //console.log(text)
+            // if (text.innerHTML.trim() == "Hello") {
+            //     text.innerHTML = 'Welcome'
+            // }
+            // else {
+            //     text.innerHTML = 'Hello'
+            // }
+
+
+
+            // if (flag) {
+            //     text.innerHTML = 'Welcome'
+            //     flag = false;
+            // }
+            // else {
+            //     text.innerHTML = 'Hello'
+            //     flag = true
+            // }
+
+            // if (flag) text.innerHTML = 'Welcome'
+            // else text.innerHTML = 'Hello'
+            // flag = !flag
+
+
+            // flag ? text.innerHTML = 'Welcome' : text.innerHTML = 'Hello'
+            // flag = !flag
+
+            text.style.color = 'blue'
+
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>
