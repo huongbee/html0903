@@ -25,16 +25,51 @@
     </style>
 
     Đơn giá:
-    <span id="price">15000</span>
+    <span class="price" huong="10000">15000</span>
     <br> Thành tiền:
     <span id="total">15000</span>
     <br>
-    <button id="btnTru" onclick="tru()">-</button>
+    <button id="btnTru">-</button>
     <input type="text" id="qty" value="1">
-    <button id="btnCong" onclick="cong()">+</button>
+    <button id="btnCong" >+</button>
+
+    <div class="clickme">
+        Click Me
+    </div>
 
 
     <script src="js/jquery-3.3.1.js" ></script>
+    <script>
+        $(document).ready(function(){
+
+            //var price = $('.price').html() //get
+            //var price = $('.price').attr('huong') //get value
+
+            //var total = $('#total').html(30000) //set value
+            
+            //var price = $('.price').attr('huong',20000)
+           
+            //console.log(price)
+            $('#btnCong').click(function(){
+                //alert('btnCong clicked')
+                //var qty = $('#qty').val();
+                //alert(qty)
+                //$('#qty').val(parseInt(qty)+1)
+
+                var obj = $('#qty').focus()
+
+                
+            })
+            // $('.clickme').on('click',function(){
+            //     alert("Click me")
+            // })
+
+            $('#qty').mouseleave(function(){
+                alert("chuot ra ngoai")
+            })
+
+        })
+    </script>
 
 
 
