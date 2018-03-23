@@ -27,7 +27,35 @@ Thành tiền: <span id="total">15000</span><br>
 <button id="btnCong" onclick="cong()">+</button>
 
 <script>
+    function cong(){
+        var price = document.getElementById('price').innerText;
+        var objQty = document.getElementById('qty')
+
+        objQty.value = parseInt(objQty.value) + 1
+
+        var objTotal = document.getElementById('total')
+
+        var total = price * parseInt(objQty.value)
+        return objTotal.innerHTML = total
+    }
     function tru(){
+        var price = document.getElementById('price').innerText;
+        var objQty = document.getElementById('qty')
+
+        
+
+        if(parseInt(objQty.value) > 1 ){
+            document.getElementById('btnTru').title = ""
+            objQty.value = parseInt(objQty.value) - 1
+            var objTotal = document.getElementById('total')
+
+            var total = price * parseInt(objQty.value)
+            return objTotal.innerHTML = total
+        }
+        else{
+            document.getElementById('btnTru').title = "Không thể giảm"
+        }
+
         
     }
 </script>
