@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        border: 1px dotted #000
+    }
+</style>
+<body>
+    <input type="text" id="soa" placeholder="Nhập số a">
+    <br>
+    <select id="pheptinh">
+        <option value="+">Cộng</option>
+        <option value="-">Trừ</option>
+        <option value="*">Nhân</option>
+        <option value="/">Chia</option>
+    </select>
+    <br>
+    <input type="text" id="sob" placeholder="Nhập số b">
+    <br>
+    <button id="btnTinh" onclick="tinh()">Tính</button>
+    <br><input type="text" disabled id="ketqua" placeholder="Kết quả">
+
+
+    <script>
+    function tinh(){
+        var objA = document.getElementById('soa')
+        var objB = document.getElementById('sob')
+        var kq = document.getElementById('ketqua')
+        var pheptinh = document.getElementById('pheptinh').value
+        
+        var soA = parseInt(objA.value);
+        var soB = parseInt(objB.value);
+
+        console.log(soA)
+        if(isNaN(soA) || soA == ''){
+            alert('Số a chưa chính xác')
+            objA.focus();
+            return false;
+        }
+        if(isNaN(soB) || soB == ''){
+            alert('Số b chưa chính xác')
+            objB.focus();
+            return false;
+        }
+
+        if(pheptinh == "+"){
+            kq.value = soA+soB
+        }
+        else if(pheptinh == "-"){
+            kq.value = soA-soB
+        }
+        else if(pheptinh == "*"){
+            kq.value = soA*soB
+        }
+        else {
+            if(pheptinh == "/" && soB !=0) kq.value = soA/soB
+            else{
+                alert('Số b phải khác 0')
+                objB.focus();
+                return false;
+            }
+        }
+    }   
+    </script>
+</body>
+</html>
