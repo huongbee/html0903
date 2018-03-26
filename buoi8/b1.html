@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    Giá: <span class="tongtien" gia="15000">15000</span>
+    <br>
+    <button class="btnTru">-</button>
+    <input class="txtQty" type="text" value="1">
+    <button class="btnCong">+</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.btnTru, .btnCong').css({
+            "width":"30px",
+            "height":"30px",
+            'background-color':'pink'
+        })
+        $('.txtQty').css('width','50px')
+        $('.txtQty').css('height','25px')
+
+        var dongia = $('.tongtien').attr('gia')
+
+        $('.btnCong').click(function(){
+            var soluong = $('.txtQty').val() //get 
+            $('.txtQty').val(parseInt(soluong)+1) //set
+            $('.tongtien').html($('.txtQty').val()*dongia)
+        })
+        $('.btnTru').click(function(){
+            var soluong = $('.txtQty').val() //get 
+
+            if(soluong>1){
+                $('.txtQty').val(parseInt(soluong)-1) //set
+                $('.tongtien').html($('.txtQty').val()*dongia)
+            }
+            else alert('Can not change')
+        })
+    })
+    </script>
+</body>
+</html>
