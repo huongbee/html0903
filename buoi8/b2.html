@@ -38,6 +38,19 @@
                 "background-color":"#f6fcc9",
             })
         })
+        
+        var flag = true
+        $('.o_co').click(function(){
+            if($(this).html()==''){
+                if(flag){
+                    $(this).html('X')
+                }
+                else $(this).html('O')
+                flag = !flag
+            }
+            else alert("Can not check again!")
+        })
+
 
         
     })
